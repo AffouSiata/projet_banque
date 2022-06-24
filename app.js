@@ -6,7 +6,9 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-const sequelize = require('./database/base');
+const connection = require('./database/base');
+// const utilisateur = require('./controllers/control');
+
 
 var app = express();
 
@@ -14,7 +16,7 @@ var app = express();
 
 
 
-sequelize.authenticate().then(()=>{
+connection.connect((error)=>{
   console.log('Connection has been established successfully.');
 
 
@@ -47,7 +49,5 @@ sequelize.authenticate().then(()=>{
     res.render('error');
   });
 })
-.catch (error=>{
-  console.error('Unable to connect to the database:', error);
-}) 
+
 module.exports = app;

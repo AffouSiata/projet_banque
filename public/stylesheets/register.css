@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.modal{
+
+    border: 1px solid white;
+    display: none;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 500px;
+    padding: 20px;
+    background-color: white;
+    height: 360px;
+    border-radius:10px ;
+    z-index: 10;
+    margin: 50px;
+}
+.modal h1{
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px 10px 11px;
+    border-bottom: 1px solid gray;
+}
+.input_text{
+    margin: 20px;
+    width: 100%;
+}
+.input_text label{
+    color: grey;
+}
+.input_text input{
+    width: 85%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid rgb(238, 235, 235);
+}
+.oubli {
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+.oubli a{
+    color: grey;
+}
+.oubli  span{
+    color: grey;
+  
+}
+.oubli button{
+    border: none;
+    background: none;
+    font-weight: bold;
+    color: rgba(162, 224, 224, 0.892);
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+   
+}
+
+.btn button{
+    width: 430px;
+    font-size: 30px;
+    border: none;
+    padding: 11px;
+    cursor: pointer;
+}
+.btn1 button{
+    width: 100%;
+    font-size: 30px;
+    border: none;
+    padding: 11px;
+    background-color: rgba(162, 224, 224, 0.892);
+    cursor: pointer;
+}
+.btn_1{
+    background-color: brown;
+}
+.btn_2{
+    background-color: rgba(162, 224, 224, 0.892);
+}
+#modalite{
+    border: 1px solid white;
+    display: none;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 500px;
+    padding: 20px;
+    background-color: white;
+    height: 560px;
+    border-radius:10px ;
+    z-index: 12;
+    margin: 50px;
+}
