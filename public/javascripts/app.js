@@ -22,7 +22,7 @@ function fermer (){
     icon.style.display="none"
     modal.style.display="none";
 }
-function connexion (){
+function connexion(){
     let cliq = document.querySelector('.modal')
     console.log("ccccccc",cliq);
     let modal = document.querySelector('#modalite')
@@ -32,8 +32,10 @@ function connexion (){
     modal.style.display="block";
     espace.style.display="block";
 
+
     
 }
+
 
 function taper (){
 
