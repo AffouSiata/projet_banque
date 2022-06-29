@@ -17,5 +17,22 @@ const data = class{
 
         })
     }
+    static selection = ()=>{
+        return new Promise((resolve,reject)=>
+        connect.query('SELECT * FROM users', function(error,resultat){
+               
+            if(error){
+                console.log(error);
+                reject(error)
+                  
+            }
+            else{
+                resolve(resultat)  
+            }
+            
+        })
+        )
+        
+    } 
 }
 module.exports=data

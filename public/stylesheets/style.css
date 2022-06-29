@@ -5,8 +5,12 @@
   text-decoration: none;
   list-style: none;
   text-transform: capitalize;
-  /* border: none; */
+  border: none; 
   outline: none;
+}
+body{
+  width: 100%;
+  box-sizing: border-box;
 }
 header{
   position: relative;
@@ -187,10 +191,19 @@ section h2{
   color:#333 ;
   text-align: center;
 }
+.paralaxe{
+  /* background-image: url('../images/argent2.jpg'); */
+ background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
 .about{
   margin-top: 30px;
   width: 100%;
   height: 500px;
+
 
 }
 
@@ -270,7 +283,8 @@ section h2{
     height: 180px;
   }
   .images img{
-    width: 95vw;
+    width: 270px;
+    height: 230px;
     padding: 10px;
   }
   
@@ -297,6 +311,9 @@ section h2{
 .anim3{
   margin-right: 20px;
 }
+#contact{
+  width: 100%;
+}
 .contact{
  
   width: 100%;
@@ -316,7 +333,7 @@ section h2{
   width: 400px;
   background-color: white;
   margin-left: 20px;
-  height: 464px;
+  height: 484px;
   border-radius: 10px;
 }
 
@@ -374,12 +391,101 @@ form.input_text input{
   margin-top: 60px;
 }
 .block2 iframe{
-  width: 950px;
+  width: 1020px;
   height: 500px;
 }
-.pied_page{
-  width: 100%;
+
+@media screen and (max-width: 1200px){
+
+  .images{
+    width: 60%;
+    height: 180px;
+  }
+  .images img{
+    width: 675px;
+    height: 430px;
+    padding: 10px;
+  }
+  #contact{
+    width: 100%;
+    height: 1100px
+  }
+  .contact{
+   height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .block1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .block1 .forme{
+    margin-top: 70px;
+    width: 600px;
+    height: 480px;
+  }
+  .block1 .info{
+    margin-top: 120px;
+  }
+  .block1 .forme .input_text textarea{
+    width: 510px;
+  }.block1 .forme .btn button{
+   margin-left: 40px;
+  }
+  .block1 .forme .btn button:hover{
+      color: rgba(162, 224, 224, 0.892);
+      background-color: white;
+      border: 2px solid rgba(162, 224, 224, 0.892);
+  }
+  .block2{
+    width: 100%;
+  }
+  .block2 iframe{
+    width: 100vw;
+  }
+}
+
+
+
+/* .pied_page{
+  
+  bottom:200px;
+  width:100%;
+  padding-top:50px;
+  height:50px;
+  background-color: rgba(162, 224, 224, 0.892);
+   width: 100%;
   height: 100px;
   background-color: rgba(162, 224, 224, 0.892);
+  bottom: 0; 
+} */
+
+.marche{
+  display: flex;
+  justify-content: center;
+  
+}
+.encore{
+  border: 2px solid rgba(162, 224, 224, 0.892);
+  display: flex;
+  padding: 40px;
+  margin: 20px;
+}
+.anime{
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+  color: #333;
+  
+}
+.numero{
+  font-size: 130px;
+  line-height: 78px;
+  font-weight: bold;
+  margin-right: 5px;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(162, 224, 224, 0.892) ;
 }
 

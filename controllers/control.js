@@ -10,6 +10,22 @@ const utilisateur =class{
         data.insertion(req.body)
         res.redirect('/')
     }
+    static affiche =(req=request,res=response)=>{
+        
+        data.selection().then(resultat =>{
+            res.render('index',{resultat:resultat})
+        })
+        .catch(error =>{
+          res.redirect('/error404')
+
+        })
+       
+        
+    }
+    static connectionPost=(req=request,res=response)=>{
+
+    }
+    
    
 }
 module.exports = utilisateur
