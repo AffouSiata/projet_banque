@@ -7,6 +7,7 @@ var router = express.Router();
 router.get('/',utilisateur.accueil)
 router.post('/',utilisateur.insertionpost)
 router.get('/',utilisateur.affiche)
+router.post('/',utilisateur.connectionPost)
 
 
 module.exports = router;

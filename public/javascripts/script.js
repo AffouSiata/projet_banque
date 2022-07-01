@@ -32,6 +32,11 @@ function connexion(){
     modal.style.display="block";
     espace.style.display="block";
 
+    // modal.addEventListener('click',(e)=>{
+    //     console.log("azerty",e.target);
+    //     e.preventDefault();
+    // })
+
 
     
 }
@@ -46,10 +51,10 @@ function taper (){
     espace.style.display="block";
 
 
-    espace.addEventListener('submit',(e)=>{
-    console.log("azerty",e.target);
-    e.preventDefault();
+//     espace.addEventListener('submit',(e)=>{
+//     console.log("azerty",e.target);
+//     e.preventDefault();
 
-})
+// })
 
 }
